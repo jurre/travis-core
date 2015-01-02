@@ -7,8 +7,6 @@ module Travis
     class UpdateJob < Base
       extend Travis::Instrumentation
 
-      register :update_job
-
       EVENT = [:start, :finish, :reset]
 
       def run

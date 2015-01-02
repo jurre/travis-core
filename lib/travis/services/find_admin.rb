@@ -9,8 +9,6 @@ module Travis
       extend Travis::Instrumentation
       include Travis::Logging
 
-      register :find_admin
-
       def run
         if repository
           admin = candidates.first

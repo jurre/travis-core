@@ -4,8 +4,6 @@ require 'travis/services/base'
 module Travis
   module Services
     class FindCaches < Base
-      register :find_caches
-
       class Wrapper
         attr_reader :repository, :s3_object
 

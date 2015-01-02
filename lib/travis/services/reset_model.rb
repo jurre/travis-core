@@ -6,8 +6,6 @@ module Travis
     class ResetModel < Base
       extend Travis::Instrumentation
 
-      register :reset_model
-
       def run
         reset if target && accept?
         true

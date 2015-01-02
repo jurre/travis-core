@@ -5,8 +5,6 @@ module Travis
     class CancelBuild < Base
       extend Travis::Instrumentation
 
-      register :cancel_build
-
       attr_reader :source
 
       def initialize(*)

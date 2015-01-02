@@ -3,8 +3,6 @@ require 'travis/services/base'
 module Travis
   module Services
     class UpdateUser < Base
-      register :update_user
-
       LOCALES = %w(en es fr ja nb nl pl pt-BR ru de) # TODO how to figure these out
 
       attr_reader :result

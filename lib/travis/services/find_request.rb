@@ -1,8 +1,6 @@
 module Travis
   module Services
     class FindRequest < Base
-      register :find_request
-
       def run(options = {})
         result
       end

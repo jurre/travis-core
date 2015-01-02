@@ -17,8 +17,6 @@ module Travis
 
         require 'travis/enqueue/services/enqueue_jobs/limit'
 
-        register :enqueue_jobs
-
         def self.run
           new.run
         end

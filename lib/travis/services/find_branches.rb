@@ -4,8 +4,6 @@ require 'travis/services/base'
 module Travis
   module Services
     class FindBranches < Base
-      register :find_branches
-
       def run
         result
       end

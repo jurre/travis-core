@@ -6,8 +6,6 @@ module Travis
     class CancelJob < Base
       extend Travis::Instrumentation
 
-      register :cancel_job
-
       attr_reader :source
 
       def initialize(*)

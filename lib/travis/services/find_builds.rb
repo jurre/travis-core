@@ -7,8 +7,6 @@ require 'travis/services/base'
 module Travis
   module Services
     class FindBuilds < Base
-      register :find_builds
-
       def run
         preload(result)
       end

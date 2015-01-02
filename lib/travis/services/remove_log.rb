@@ -4,8 +4,6 @@ module Travis
       extend Travis::Instrumentation
       include Travis::Logging
 
-      register :remove_log
-
       FORMAT = "Log removed by %s at %s"
 
       def run

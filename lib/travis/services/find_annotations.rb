@@ -1,8 +1,6 @@
 module Travis
   module Services
     class FindAnnotations < Base
-      register :find_annotations
-
       def run
         if params[:ids]
           scope(:annotation).where(id: params[:ids])

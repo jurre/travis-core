@@ -7,6 +7,10 @@ module Travis
         Travis.services.add(key, self)
       end
 
+      def self.inherited(subclass)
+        subclass.register(subclass.service_key)
+      end
+
       include Helpers
 
       attr_reader :current_user, :params
@@ -22,6 +26,12 @@ module Travis
 
       def logger
         Travis.logger
+      end
+
+      private
+
+      def self.service_key
+        self.name.split('::').last.underscore.to_sym
       end
     end
   end

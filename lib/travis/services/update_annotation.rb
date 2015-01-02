@@ -1,8 +1,6 @@
 module Travis
   module Services
     class UpdateAnnotation < Base
-      register :update_annotation
-
       def run
         if annotations_enabled? && annotation_provider
           cached_annotation = annotation

@@ -3,8 +3,6 @@ require 'travis/services/base'
 module Travis
   module Services
     class RegenerateRepoKey < Base
-      register :regenerate_repo_key
-
       def run(options = {})
         if repo && accept?
           regenerate

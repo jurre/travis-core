@@ -3,8 +3,6 @@ require 'core_ext/active_record/none_scope'
 module Travis
   module Services
     class FindRequests < Base
-      register :find_requests
-
       def run
         preload(result)
       end

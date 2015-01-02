@@ -6,8 +6,6 @@ module Travis
     class UpdateLog < Base
       extend Travis::Instrumentation
 
-      register :update_log
-
       def run
         log = run_service(:find_log, id: params[:id])
         log.update_attributes(archived_at: params[:archived_at], archive_verified: params[:archive_verified]) if log

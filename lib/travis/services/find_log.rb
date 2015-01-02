@@ -3,8 +3,6 @@ require 'travis/services/base'
 module Travis
   module Services
     class FindLog < Base
-      register :find_log
-
       def run(options = {})
         result if result
       end
